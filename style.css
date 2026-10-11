@@ -85,3 +85,18 @@ nav{flex-wrap:wrap;gap:12px}
 footer{gap:15px;flex-direction:column}}
 .built-with{margin-top:14px;font-size:.78rem!important;font-weight:600;color:var(--ink)!important}
 .project .tags{margin-top:6px}
+h1{text-transform:lowercase}
+.intro{margin-bottom:20px}
+.intro p{font-size:1.15rem;max-width:760px}
+.card h3{font-size:1.05rem;margin-bottom:14px;text-transform:lowercase}
+.balls{list-style:none;display:grid;gap:12px}
+.balls li{position:relative;padding-left:30px;font-size:.93rem;color:var(--muted)}
+.balls li::before{content:'🎾';position:absolute;left:0;top:0}
+.balls strong{color:var(--ink)}
+.socials a{font-size:1.25rem;line-height:1}
+.emoji-links{display:flex;justify-content:center;gap:16px;margin-top:8px}
+.emoji-links a{width:64px;height:64px;border:1px solid var(--cream);border-radius:50%;display:grid;place-items:center;font-size:1.8rem;transition:transform .2s,background .2s}
+.emoji-links a:hover{transform:translateY(-4px);background:rgba(255,255,255,.1)}
+.resume-actions{display:flex;gap:12px;flex-wrap:wrap}
+.resume-frame{width:100%;height:min(1100px,85vh);border:1px solid var(--line);border-radius:20px;background:var(--paper);box-shadow:var(--shadow)}
+.resume-fallback{margin-top:14px;color:var(--muted);font-size:.85rem}
