@@ -30,30 +30,34 @@
 <div class="project-list">
 <article class="project">
 <div class="project-number">01</div>
-<div><h3>AI Health Manager</h3>
-<p>A planned medical-imaging project that combines chest X-ray predictions with radiology reports while communicating uncertainty and limitations clearly.</p>
-<div class="tags"><span class="tag">AI</span><span class="tag">CNN</span><span class="tag">Streamlit</span></div></div>
+<div><h3>AI Health Assistant</h3>
+<p>Multimodal chest X-ray analysis system (in progress). A DenseNet121 CNN does multi-label classification for pneumonia, pleural effusion, pneumothorax, atelectasis, and cardiomegaly, since one X-ray can show several findings. Findings extracted from an uploaded PDF radiology report are compared against the model predictions, and the Streamlit interface shows per-class probabilities alongside stated uncertainty and limitations. Planned training data: NIH Chest X-rays.</p>
+<p class="built-with">Built with</p>
+<div class="tags"><span class="tag">Python</span><span class="tag">DenseNet121 (CNN)</span><span class="tag">Multi-label classification</span><span class="tag">NIH Chest X-rays (Kaggle)</span><span class="tag">PDF text extraction</span><span class="tag">Streamlit</span></div></div>
 <div class="arrow" title="Repository coming soon">✦</div>
 </article>
 <a class="project" href="https://github.com/shreyabharath27/AztecCounselor" target="_blank" rel="noreferrer">
 <div class="project-number">02</div>
 <div><h3>Aztec Counselor</h3>
-<p>A full-stack academic planning assistant that helps students plan courses, with an LLM-powered agent for curriculum questions.</p>
-<div class="tags"><span class="tag">React</span><span class="tag">FastAPI</span><span class="tag">PostgreSQL</span><span class="tag">AWS</span></div></div>
+<p>Course-planning chatbot that generates degree plans from an uploaded transcript. A FastAPI backend extracts the transcript data, and Amazon Bedrock converts it into structured course records and drafts the plan. Prerequisite and graduation-requirement rules are enforced with deterministic logic rather than left to the LLM. Students, requirements, completed courses, and plans are stored in PostgreSQL; transcript files go to S3.</p>
+<p class="built-with">Built with</p>
+<div class="tags"><span class="tag">Next.js</span><span class="tag">React</span><span class="tag">TypeScript</span><span class="tag">FastAPI</span><span class="tag">Python</span><span class="tag">PostgreSQL</span><span class="tag">Amazon S3</span><span class="tag">Amazon Bedrock</span></div></div>
 <div class="arrow">↗</div>
 </a>
 <a class="project" href="https://github.com/shreyabharath27/TrafficDetection" target="_blank" rel="noreferrer">
 <div class="project-number">03</div>
 <div><h3>Traffic Detection</h3>
-<p>A computer vision project that processes camera footage to detect and analyze traffic patterns.</p>
-<div class="tags"><span class="tag">Python</span><span class="tag">OpenCV</span><span class="tag">Computer vision</span></div></div>
+<p>Runs a pretrained Ultralytics YOLO detector over 24 urban intersection images with varied lighting, weather, viewpoints, and occlusion, detecting person, bicycle, car, bus, and truck. Outputs annotated images with boxes, class labels, confidence scores, and per-class counts. Compares confidence thresholds (0.20, 0.50, 0.80) and several NMS IoU thresholds to analyze vehicle interactions with pedestrians and cyclists.</p>
+<p class="built-with">Built with</p>
+<div class="tags"><span class="tag">Python</span><span class="tag">Ultralytics YOLO</span><span class="tag">Object detection</span><span class="tag">Non-Maximum Suppression</span></div></div>
 <div class="arrow">↗</div>
 </a>
 <a class="project" href="https://github.com/shreyabharath27/LineDetection" target="_blank" rel="noreferrer">
 <div class="project-number">04</div>
 <div><h3>Line Detection</h3>
-<p>An image-processing project exploring edge detection and identifying lines from real-time camera input.</p>
-<div class="tags"><span class="tag">Python</span><span class="tag">OpenCV</span><span class="tag">Image processing</span></div></div>
+<p>Real-time webcam pipeline in Python and OpenCV that compares three line-detection methods: Canny edge detection, probabilistic Hough transform on the Canny edge map, and least-squares line fitting on edge pixels split into left and right image regions. A four-panel display shows each method and a combined overlay for comparison under different visual conditions.</p>
+<p class="built-with">Built with</p>
+<div class="tags"><span class="tag">Python</span><span class="tag">OpenCV</span><span class="tag">Canny edge detection</span><span class="tag">Probabilistic Hough transform</span><span class="tag">Least-squares line fitting</span></div></div>
 <div class="arrow">↗</div>
 </a>
 </div>

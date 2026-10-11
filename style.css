@@ -83,3 +83,5 @@ nav{flex-wrap:wrap;gap:12px}
 .project-number{font-size:1.7rem}
 .skills-grid{grid-template-columns:1fr 1fr}
 footer{gap:15px;flex-direction:column}}
+.built-with{margin-top:14px;font-size:.78rem!important;font-weight:600;color:var(--ink)!important}
+.project .tags{margin-top:6px}
